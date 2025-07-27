@@ -14,7 +14,7 @@ export default function App() {
     setIsDarkMode(newValue);
     setBgColor(isDarkMode? "bg-blue-100" : "bg-black");
     setPrimaryColor(isDarkMode? "bg-blue-800": "bg-blue-300");
-    setPrimaryColorText(isDarkMode? "text-blue-300": "text-blue-800");
+    setPrimaryColorText(isDarkMode? "text-blue-300": "text-blue-700");
     setBarStyle(isDarkMode? "dark-content": "light-content");
   }
 
@@ -25,7 +25,7 @@ export default function App() {
       <SafeAreaView className="flex-1 w-full p">
         <View className=" flex-1 p-4 ">
           <View className={`${primaryColor} justify-between flex-row rounded-full p-4`}>
-            <Text className={`text-2xl font-bold ${primaryColorText}`}>Dark Mode</Text>
+            <Text className={`text-2xl font-bold ${primaryColorText}`}>DARK MODE</Text>
            <Switch 
             value={isDarkMode}
             onValueChange={onToggleDarkMode}
