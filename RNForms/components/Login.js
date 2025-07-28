@@ -1,6 +1,6 @@
 
-import { Text, View, TextInput, TouchableOpacity } from "react-native";
-import { use, useState } from "react";
+import { Text, View, TextInput, TouchableOpacity, Image, KeyboardAvoidingView, Platform } from "react-native";
+import { useState } from "react"; 
 
 export default function Login() {
 
@@ -9,7 +9,19 @@ export default function Login() {
 
 
   return (
-    <View className={`w-full border border-blue-500 p-4 rounded-lg`}>
+    <View
+      className={`w-full border border-blue-500 p-4 rounded-lg `}>
+
+      <Image source={require("../assets/icon.png")} 
+        style={{
+              width: 200,
+              height: 400,
+              alignSelf: "center",
+              marginBottom: 50,
+            }}
+      />
+
+
       <View className="mb-4">
         <Text className="font-bold text-2xl mb-4 text-gray-400">Username</Text>
         <TextInput 
@@ -37,10 +49,6 @@ export default function Login() {
         </View>
       </TouchableOpacity>
 
-
-
-      
-    
     </View>
   );
 }
