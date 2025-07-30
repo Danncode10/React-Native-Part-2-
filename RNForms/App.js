@@ -43,29 +43,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import "./global.css"
 import { Text, View, SafeAreaView, TextInput, Switch, KeyboardAvoidingView, Platform, ScrollView} from "react-native";
 import { useState } from "react";
